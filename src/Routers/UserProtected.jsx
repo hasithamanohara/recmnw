@@ -1,14 +1,10 @@
 import React from "react";
 import User from "../Pages/Users/User";
-import Login from "../Pages/Login/Login";
+import { Navigate } from "react-router-dom";
 
 const UserProtected = () => {
   const user = true;
-  if (user) {
-    return <Outlet />;
-  } else {
-    return <Login />;
-  }
+  return user ? <User /> : <Navigate to="/Login" />;
 };
 
 export default UserProtected;

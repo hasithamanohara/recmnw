@@ -4,6 +4,7 @@ import Mainlayout from "../Layout/Mainlayout";
 import Home from "../Pages/Home/Home";
 import User from "../Pages/Users/User";
 import Login from "../Pages/Login/Login";
+import UserProtected from "./UserProtected";
 
 const AppRouter = () => {
   return (
@@ -12,7 +13,7 @@ const AppRouter = () => {
         <Route path="/" element={<Mainlayout />}>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
-          <Route element="Login" >
+          <Route element={<UserProtected />}>
             <Route path="user" element={<User />} />
           </Route>
         </Route>

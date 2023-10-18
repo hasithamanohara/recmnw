@@ -19,12 +19,12 @@ const Header = () => {
           </IconButton>
           <h1 className="text-2xl font-semibold">Ceylara</h1>
 
-          <div className="items-center pl-1 bg-slate-50 outline-none rounded-lg flex">
+          <div className="items-center pl-1 bg-slate-50 outline-none rounded-lg flex ">
             <div>
               <input
                 type="text"
                 placeholder="Search"
-                className="font-semibold outline-none rounded-lg bg-slate-50 w-64 h-6"
+                className="font-semibold outline-none rounded-lg bg-slate-50 overflow-hidden w-full h-6"
               />
             </div>
             <div>
