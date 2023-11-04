@@ -9,7 +9,7 @@ const Header = () => {
     <div>
       <header className="fixed top-0 left-0 w-full h-3/10 p-5 bg-green-200 flex items-center justify-between z-[100] drop-shadow-header_shadow">
         {/* Header left */}
-        <div className="flex space-x-2 items-center">
+        <div className="flex space-x-3 items-center justify-center">
           <IconButton>
             <ListIcon
               sx={{
